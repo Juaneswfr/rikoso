@@ -14,7 +14,7 @@
                     </figure>
                 </h2>
                 <span>{{ formatDate }}</span>
-                
+        
             </div>
             <ul class="list-group list-group-flush ">
                 <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -30,6 +30,14 @@
                     Tipo <span class="badge text-bg-primary rounded-pill">{{ character.type }}</span>
                 </li>
             </ul>
+        </div>
+        <div class="text-center h3">
+          <router-link :to="{name:'EditC', params:{id:character.id}}" class="go-back">
+            <i class="fa-solid fa-arrow-left"></i> Editar
+          </router-link>
+        </div>
+        <div>
+
         </div>
 
     </div>

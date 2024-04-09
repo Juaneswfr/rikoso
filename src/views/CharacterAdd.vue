@@ -1,12 +1,15 @@
 <template>
     <div class="container-fluid">
+        <router-link :to="{path:'/'}" class="go-back">
+            <i class="fa-solid fa-arrow-left"></i> Regresar atras
+        </router-link>
         <form v-on:submit.prevent="agregarRegistro">
             <div class="title">
                 <h2>Agrega tu personaje</h2>
             </div>
             <label for="image" class="image">
                 <img src="@/assets/add_Profileimage.svg" width="120px" alt="">
-                <input type="file" id="image" v-model="character.image" hidden accept="image/png,image/jpg">
+                <input type="file" id="image" hidden accept="image/png,image/jpg">
                 <span>Selecciona una imagen</span>
             </label>
         
